@@ -11,7 +11,6 @@ body {
     background: #f5f7fa;
     color: #222;
     line-height: 1.6;
-    padding-bottom: 50px;
 }
 
 /* HERO */
@@ -105,4 +104,17 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.delay-2 {
+    animation-delay: .8s;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 40px;
 }
