@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #4ba3ff, #003c8f);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    animation: fade 1s ease forwards;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* CONTENT BLOCKS */
+.content {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.img {
+    width: 100%;
+    border-radius: 14px;
+    margin: 25px 0;
+    transition: transform .4s ease;
+}
+
+.img:hover {
+    transform: scale(1.03);
+}
+
+/* List */
+.list-title {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cool-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.cool-list li {
+    margin-top: 8px;
+    padding: 6px 0;
+    list-style: "• ";
+    transition: transform .3s ease, color .3s ease;
+}
+
+.cool-list li:hover {
+    transform: translateX(5px);
+    color: #007BFF;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fade 1.2s ease forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1s ease forwards;
+}
+
+.delay {
+    animation-delay: .4s;
+}
+
+@keyframes fade {
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
